@@ -1,0 +1,93 @@
+{
+	"variables": [],
+	"info": {
+		"name": "OneView",
+		"_postman_id": "65aa18ff-8be9-fcc4-8d41-fe1e0fcadce1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login-Sessions",
+			"description": "",
+			"item": [
+				{
+					"name": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/login-sessions",
+					"request": {
+						"url": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/login-sessions",
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-Api-Version",
+								"value": "200",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"authLoginDomain\":\"\",\r\n    \"password\":\"\",\r\n    \"userName\":\"\",\r\n    \"loginMsgAck\":\"true\" \r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server/Connections",
+			"description": "",
+			"item": [
+				{
+					"name": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/version copy",
+					"request": {
+						"url": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/connections",
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Api-Version",
+								"value": "200",
+								"description": ""
+							},
+							{
+								"key": "Auth",
+								"value": "your_token",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Version",
+			"description": "",
+			"item": [
+				{
+					"name": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/version",
+					"request": {
+						"url": "https://houegsl-oneview02.us.rdlabs.hpecorp.net/rest/version",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
